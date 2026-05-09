@@ -1,0 +1,152 @@
+/*
+variables.css - Sistemul de design DevConnect 2025
+Definim aici: culori, fonturi, marimi, spatii
+Aceste variabile sunt folosite in main.css
+Vom completa acest fisier in Laboratorul 3
+*/
+/*
+variables.css - Sistemul de design DevConnect 2025
+Toate culorile, fonturile si dimensiunile proiectului
+*/
+:root {
+  /* ---- CULORI ---- */
+  /* Culoarea principala: albastru inchis (header, titluri) */
+  --culoare-primara: #1B3A6B;
+  /* Culoarea secundara: albastru mediu (linkuri, butoane secundare) */
+  --culoare-secundara: #2E5FAC;
+  /* Culoarea accent: portocaliu (butoane principale, evidentieri) */
+  --culoare-accent: #E87722;
+  /* Culori de fundal */
+  --fundal-pagina: #F8F9FA;
+  --fundal-card: #FFFFFF;
+  --fundal-inchis: #1a1a2e;
+  /* Culori text */
+  --text-principal: #212529;
+  --text-secundar: #6C757D;
+  --text-deschis: #FFFFFF;
+  /* ---- FONTURI ---- */
+  /* Font pentru titluri: geometric, modern */
+  --font-titlu: "Segoe UI", Arial, sans-serif;
+  /* Font pentru text obisnuit: lizibil, neutru */
+  --font-text: "Segoe UI", system-ui, sans-serif;
+  /* Font pentru cod: monospaced */
+  --font-cod: "Courier New", Courier, monospace;
+  /* ---- DIMENSIUNI TEXT ---- */
+
+  --marime-mica: 0.875rem;
+  /* 14px */
+  --marime-normala: 1rem;
+  /* 16px */
+  --marime-medie: 1.25rem;
+  /* 20px */
+  --marime-mare: 1.5rem;
+  /* 24px */
+  --marime-titlu: 2.5rem;
+  /* 40px */
+  /* ---- SPATII ---- */
+  --spatiu-mic: 8px;
+  --spatiu-mediu: 16px;
+  --spatiu-mare: 32px;
+  --spatiu-sectiune: 80px;
+  /* ---- ALTELE ---- */
+  --raza-colturi: 8px;
+  --umbra-card: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --umbra-hover: 0 8px 24px rgba(0, 0, 0, 0.16);
+  --tranzitie: 0.25s ease;
+  --latime-maxima: 1200px;
+}
+
+/*
+variables.css - Sistemul de design DevConnect 2025
+Definim aici: culori, fonturi, marimi, spatii
+Aceste variabile sunt folosite in main.css
+Vom completa acest fisier in Laboratorul 3
+*/
+/*
+variables.css - Sistemul de design DevConnect 2025
+Toate culorile, fonturile si dimensiunile proiectului
+*/
+:root {
+  /* ---- CULORI ---- */
+  /* Culoarea principala: albastru inchis (header, titluri) */
+  --culoare-primara: #1B3A6B;
+  /* Culoarea secundara: albastru mediu (linkuri, butoane secundare) */
+  --culoare-secundara: #2E5FAC;
+  /* Culoarea accent: portocaliu (butoane principale, evidentieri) */
+  --culoare-accent: #E87722;
+  /* Culori de fundal */
+  --fundal-pagina: #F8F9FA;
+  --fundal-card: #FFFFFF;
+  --fundal-inchis: #1a1a2e;
+  /* Culori text */
+  --text-principal: #212529;
+  --text-secundar: #6C757D;
+  --text-deschis: #FFFFFF;
+  /* ---- FONTURI ---- */
+  /* Font pentru titluri: geometric, modern */
+  --font-titlu: "Segoe UI", Arial, sans-serif;
+  /* Font pentru text obisnuit: lizibil, neutru */
+  --font-text: "Segoe UI", system-ui, sans-serif;
+  /* Font pentru cod: monospaced */
+  --font-cod: "Courier New", Courier, monospace;
+  /* ---- DIMENSIUNI TEXT ---- */
+
+  --marime-mica: 0.875rem;
+  /* 14px */
+  --marime-normala: 1rem;
+  /* 16px */
+  --marime-medie: 1.25rem;
+  /* 20px */
+  --marime-mare: 1.5rem;
+  /* 24px */
+  --marime-titlu: 2.5rem;
+  /* 40px */
+  /* ---- SPATII ---- */
+  --spatiu-mic: 8px;
+  --spatiu-mediu: 16px;
+  --spatiu-mare: 32px;
+  --spatiu-sectiune: 80px;
+  /* ---- ALTELE ---- */
+  --raza-colturi: 8px;
+  --umbra-card: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --umbra-hover: 0 8px 24px rgba(0, 0, 0, 0.16);
+  --tranzitie: 0.25s ease;
+  --latime-maxima: 1200px;
+}
+
+/* Adaugă după variables.css și reset.css */
+.container {
+  max-width: var(--latime-maxima);
+  margin-inline: auto;
+  padding-inline: var(--spatiu-mare);
+}
+
+/* Loading spinner - același ca în Lab 5 */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e0e0e0;
+  border-top-color: var(--culoare-secundara);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem;
+}
+
+.eroare-box {
+  text-align: center;
+  padding: 2rem;
+  color: #dc3545;
+}
